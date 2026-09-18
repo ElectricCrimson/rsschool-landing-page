@@ -20,7 +20,7 @@
       </div>
       <nav class="nav">
         <ul class="nav-list">
-          <li class="nav-item"><a class="link nav-link" href="#">Favorite coffee</a></li>
+          <li class="nav-item"><a class="link nav-link" href="#favorite">Favorite coffee</a></li>
           <li class="nav-item"><a class="link nav-link" href="#">About</a></li>
           <li class="nav-item"><a class="link nav-link" href="#">Mobile app</a></li>
           <li class="nav-item"><a class="link nav-link" href="#">Contact us</a></li>
@@ -58,8 +58,39 @@
         </div>
       </div>
     </section>
-    <section class="section">
-      <div class="wrapper"></div>
+    <section class="section" id="favorite">
+      <div class="wrapper">
+        <h2 class="heading heading-secondary">Choose your <span class="heading-accent">favorite</span> coffee</h2>
+        <div class="slider-wrapper">
+          <div class="slider">
+            <button class="btn btn-slider">
+              <svg width="12.5" height="12" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.5 6.5H13M7 12.5L13 6.5L7 0.5" class="arrow-path" stroke="#403f3d" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="slider-item">
+              <div class="slider-img-wrapper">
+                <img src="../assets/img/coffee-slider-1.png" alt="Frappuccino" class="slider-img">
+              </div>
+              <div class="item-caption">
+                <h3 class="heading heading-tertiary">S’mores Frappuccino</h3>
+                <p class="text item-description">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+                <h3 class="heading heading-tertiary">$5.50</h3>
+              </div>
+            </div>
+            <button class="btn btn-slider">
+              <svg width="12.5" height="12" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.5 6.5H13M7 12.5L13 6.5L7 0.5" class="arrow-path" stroke="#403f3d" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+          <div class="pagination-wrapper">
+            <div class="pagination-item pagination-active"></div>
+            <div class="pagination-item"></div>
+            <div class="pagination-item"></div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="section">      
       <div class="wrapper"></div>
