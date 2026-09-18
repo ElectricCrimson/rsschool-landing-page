@@ -25,6 +25,10 @@ html {
   font-size: 1.6rem;
 }
 
+.section {
+  margin-bottom: 10rem;
+}
+
 .wrapper {
   max-width: 144rem;
   padding: 0 4rem; 
