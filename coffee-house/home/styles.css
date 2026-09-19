@@ -327,3 +327,51 @@ html {
 .pagination-active {
   background-color: var(--color-secondary);
 }
+
+.gallery {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 59rem 43rem; 
+}
+
+.gallery .gallery-item,
+.gallery-img {
+  border-radius: 2rem;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-item:hover {
+  cursor: pointer;
+
+}
+
+.gallery-img {
+  object-fit: cover;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-img {
+  transform: scale(1.1);
+}
+
+.gallery-item .gallery-img {
+  transition: all 0.3s ease-in-out;
+}
+
+.gallery-item:hover .gallery-img {
+  transform: scale(1);
+}
+
+.gallery-item:nth-of-type(2) {
+  height: 43rem;
+}
+
+.gallery-item:last-child {
+  height: 59rem;
+  align-self: flex-end;
+}
