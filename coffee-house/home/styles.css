@@ -439,3 +439,84 @@ html {
 .btn-app:hover .btn-text {
   color: var(--color-primary-light);
 }
+
+.footer-contacts,
+.icons-wrapper,
+.btn-social,
+.contacts,
+.contact-link {
+  display: flex;
+  align-self: center;
+}
+
+.footer-contacts {
+  padding: 10rem;
+  gap: 10rem;
+  background-color: var(--color-secondary);
+  margin-bottom: 4rem;
+  border-radius: 4rem;
+}
+
+.footer-socials {
+  max-width: 53rem;
+}
+
+.footer-contacts .heading-secondary,
+.contacts-wrapper .heading-tertiary {
+  color: var(--color-primary-light);
+}
+
+.icons-wrapper {
+  gap: 1.2rem;
+}
+
+.btn-social:link,
+.btn-social:visited {
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-social:hover,
+.btn-social:active {
+  background-color: var(--color-primary-light);
+}
+
+.btn-social .icon-path {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-social:hover .icon-path {
+  stroke: var(--color-primary-dark);
+}
+
+.contacts-wrapper {
+  align-self: center;
+}
+
+.contacts-wrapper .heading-tertiary {
+  margin-bottom: 4rem;
+}
+
+.contacts,
+.contact-link {
+  gap: 0.8rem;
+}
+
+.contacts:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.contacts .link,
+.contact-text {
+  color: var(--color-primary-light);
+}
+
+.contacts .link::after {
+  background-color: var(--color-primary-light);
+}
+
+.contact-text {
+  font-weight: 600;
+}
