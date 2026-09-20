@@ -46,8 +46,12 @@ html {
   max-width: 10rem;
 }
 
-.logo {
+.logo,
+.app-img {
   display: block;
+}
+
+.logo {
   width: 100%;
 }
 
@@ -63,6 +67,8 @@ html {
 .btn {
   font-weight: 600;
   line-height: 150%;
+  color: var(--color-primary-dark);
+  text-decoration: none;
 }
 
 .link:link,
@@ -374,4 +380,62 @@ html {
 .gallery-item:last-child {
   height: 59rem;
   align-self: flex-end;
+}
+
+#app .wrapper,
+.btns-app-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+#app .wrapper {
+  gap: 10rem;
+}
+
+.description-wrapper {
+  text-align: start;
+}
+
+.description-wrapper .text {
+  margin-bottom: 4rem;
+}
+
+.btns-app-wrapper {
+  gap: 2rem;
+}
+
+.btn-app {
+  padding: 1.2rem 0rem 1.2rem 2rem;
+  width: 20rem;
+  border-color: var(--color-secondary);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-app:hover {
+  background-color: var(--color-secondary);
+}
+
+.btn-text {
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 0;
+}
+
+.btn-text:first-child {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  line-height: 140%;
+}
+
+.btn-app .icon-app-path,
+.btn-app .btn-text {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-app:hover .icon-app-path {
+  fill: var(--color-primary-light);
+}
+
+.btn-app:hover .btn-text {
+  color: var(--color-primary-light);
 }
