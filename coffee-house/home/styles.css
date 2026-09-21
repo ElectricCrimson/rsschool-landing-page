@@ -165,6 +165,7 @@ html {
   height: 3.6rem;
   border-radius: 50%;
   justify-content: center;
+  border: none;
 }
 
 .switch-icon:first-child {
