@@ -35,11 +35,24 @@ html {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 650px) {
+  .wrapper {
+    padding: 0 3.2rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .wrapper {
+    padding: 0 1.6rem;
+  }
+}
+
 .header-wrapper {
   padding: 2rem 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .logo-wrapper {
@@ -66,6 +79,8 @@ html {
   align-items: center;
   gap: 0.7rem;
   display: none;
+  position: absolute;
+  right: 4rem;
 }
 
 .burger-line {
@@ -103,6 +118,15 @@ html {
 .btn:hover,
 .btn:active {
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .link:hover,
+  .link:active,
+  .btn:hover,
+  .btn:active {
+    cursor: default;
+  }
 }
 
 .nav-link {
@@ -145,6 +169,22 @@ html {
   max-width: 18.4rem;
   align-items: center;
   gap: 2.4rem;
+}
+
+
+@media screen and (max-width: 900px) {
+  .nav,
+  .menu-link:link {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .actions-wrapper {
+    margin-right: 6.8rem;
+  }
 }
 
 .btn {
@@ -230,6 +270,23 @@ html {
   font-style: italic;
 }
 
+@media screen and (max-width: 735px) {
+  .heading-primary {
+    font-size: 4.2rem;
+    line-height: 115%;
+  }
+
+  .heading-secondary {
+    font-size: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .br {
+    display: none;
+  }
+}
+
 .text {
   line-height: 150%;
   color: var(--color-primary-dark);
@@ -249,6 +306,12 @@ html {
 .tabs-wrapper {
   gap: 1.6rem;
   margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 415px) {
+  .tabs-wrapper {
+    gap: 0.8rem;
+  }
 }
 
 .btn-tab {
@@ -282,6 +345,7 @@ html {
 
 .catalog-wrapper {
   display: flex;
+  justify-content: center;
   gap: 4rem;
   flex-wrap: wrap;
 }
@@ -338,6 +402,15 @@ html {
 
 .catalog-card:hover .card-img {
   transform: scale(1);
+}
+
+@media screen and (max-width: 1090px) {
+  .catalog-card:nth-child(5),
+  .catalog-card:nth-child(6),
+  .catalog-card:nth-child(7),
+  .catalog-card:nth-child(8) {
+    display: none;
+  }
 }
 
 .footer-contacts,
@@ -423,4 +496,36 @@ html {
 
 .hidden {
   display: none;
+}
+
+
+@media screen and (max-width: 1180px) {
+  .footer {
+    gap: 6rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .footer-contacts {
+    padding: 10rem 6rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contacts-wrapper {
+    align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer-contacts {
+    gap: 4rem;
+    padding: 6rem 3.2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer-contacts {
+    padding: 6rem 1.6rem;
+  }
 }
