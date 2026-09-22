@@ -2,6 +2,7 @@ const body = document.querySelector('.body');
 const headings = document.querySelectorAll('.heading');
 const logoPaths = document.querySelectorAll('.logo-path');
 const menuIcon = document.querySelector('.menu-icon');
+const burgerBtn = document.querySelector('.burger');
 const texts = document.querySelectorAll('.text');
 const links = document.querySelectorAll('.link');
 const btns = document.querySelectorAll('.btn');
@@ -19,6 +20,7 @@ function switchColors() {
   headings.forEach(heading => heading.classList.toggle('dark-mode-text'));
   logoPaths.forEach(path => path.classList.toggle('dark-btn'));
   menuIcon.classList.toggle('dark-icon');
+  burgerBtn.classList.toggle('dark-burger');
   texts.forEach(text => text.classList.toggle('dark-mode-text'));
   links.forEach(link => link.classList.toggle('dark-link'));
   btns.forEach(btn => btn.classList.toggle('dark-btn'));

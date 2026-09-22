@@ -637,3 +637,11 @@ html {
 .logo-path.dark-btn {
   fill: var(--color-primary-light);
 }
+
+.burger.dark-burger {
+  border-color: var(--color-primary-light);
+}
+
+.burger.dark-burger .burger-line{
+  background-color: var(--color-primary-light);
+}
