@@ -226,16 +226,16 @@ html {
   border: 1px solid var(--color-border);
 }
 
-.btn-switch .switch-icon:last-child,
-.btn-switch:hover .switch-icon:last-child .icon-path {
+.btn-switch .switch-dark,
+.btn-switch:hover .switch-dark .icon-path {
   transition: all 0.3s ease-in-out;
 }
 
-.btn-switch:hover .switch-icon:last-child {
+.btn-switch:hover .switch-dark {
   background-color: var(--color-secondary);
 }
 
-.btn-switch:hover .switch-icon:last-child .icon-path {
+.btn-switch:hover .switch-dark .icon-path {
   fill: var(--color-primary-light);
 }
 
@@ -644,4 +644,26 @@ html {
 
 .burger.dark-burger .burger-line{
   background-color: var(--color-primary-light);
+}
+
+.btn-switch.dark-btn {
+  border-color: var(--color-secondary);
+}
+
+.btn-switch .switch-light.dark-btn {
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-switch:hover .switch-light.dark-btn {
+  background-color: var(--color-primary-dark);
+}
+
+.btn-switch .switch-dark.dark-btn,
+.switch-dark.dark-btn:hover {
+  background-color: var(--color-accent);
+}
+
+.switch-dark.dark-btn .icon-path {
+  fill: var(--color-primary-light);
 }
