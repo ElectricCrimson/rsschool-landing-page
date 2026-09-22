@@ -737,3 +737,53 @@ html {
 .dark-mode-text {
   color: var(--color-primary-light);
 }
+
+.pagination-item.dark-mode {
+  background-color: var(--color-secondary);
+}
+
+.pagination-active.dark-mode {
+  background-color: var(--color-border);
+}
+
+.btn.dark-btn {
+  color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+}
+
+.btn-hero.dark-btn {
+  background-color: var(--color-dark-mode-primary);
+}
+
+.link.dark-link {
+  color: var(--color-primary-light);
+}
+
+.link.dark-link::after {
+  background-color: var(--color-primary-light);
+}
+
+.footer-contacts.dark-footer {
+  background-color: var(--color-primary-dark);
+}
+
+.btn-app.dark-btn .icon-app-path {
+  fill: var(--color-primary-light);
+}
+
+.btn-slider.dark-btn .arrow-path {
+  stroke: var(--color-primary-light);
+}
+
+.btn-app.dark-btn:hover,
+.btn-slider.dark-btn:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.btn-social.dark-btn:hover {
+  background-color: var(--color-dark-mode-primary); 
+}
+
+.btn-social.dark-btn:hover .icon-path {
+  stroke: var(--color-primary-light);
+}

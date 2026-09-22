@@ -197,7 +197,6 @@ html {
   gap: 2.4rem;
 }
 
-
 @media screen and (max-width: 900px) {
   .nav,
   .menu-link:link {
@@ -587,4 +586,48 @@ html {
 
 .dark-mode-text {
   color: var(--color-primary-light);
+}
+
+.link.dark-link {
+  color: var(--color-primary-light);
+}
+
+.link.dark-link::after {
+  background-color: var(--color-primary-light);
+}
+
+.btn.dark-btn {
+  color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+}
+
+.btn-social.dark-btn:hover {
+  background-color: var(--color-dark-mode-primary); 
+}
+
+.btn-social.dark-btn:hover .icon-path {
+  stroke: var(--color-primary-light);
+}
+
+.wrapper-icon.dark-icon {
+  border-color: var(--color-primary-light);
+}
+
+.wrapper-icon.dark-icon .icon-path {
+  stroke: var(--color-primary-light);
+}
+
+.footer-contacts.dark-footer,
+.btn-tab.dark-tab-active,
+.btn-tab.dark-tab:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.btn-tab.dark-tab {
+  border-color: var(--color-secondary);
+}
+
+.btn-tab.dark-tab-active,
+.btn-tab.dark-tab:hover {
+  border-color: transparent;
 }
