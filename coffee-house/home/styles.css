@@ -35,18 +35,22 @@ html {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 650px) {
-  .wrapper {
-    padding: 0 3.2rem;
-  }
-}
-
 .header-wrapper {
   padding: 2rem 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
+}
+
+@media screen and (max-width: 650px) {
+  .wrapper {
+    padding: 0 3.2rem;
+  }
+
+  .header-wrapper {
+    padding: 2rem 3.2rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -95,7 +99,7 @@ html {
   border-radius: 10rem;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .burger {
     right: 1.6rem;
   }
@@ -189,7 +193,7 @@ html {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .actions-wrapper {
     margin-right: 5.6rem;
   }
@@ -240,6 +244,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   vertical-align: middle;
+  background-position: center;
   padding: 10rem;
 }
 
@@ -255,6 +260,7 @@ html {
   .hero-background {
     padding-left: 6rem;
     padding-right: 9.8rem;
+    background-size: 180% 100%;
   }
 }
 
@@ -262,6 +268,7 @@ html {
   .hero-background {
     padding: 6rem 1.6rem;
     height: 55.2rem;
+    background-size: 250% 100%;
   }
 }
 

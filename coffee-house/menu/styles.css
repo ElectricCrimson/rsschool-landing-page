@@ -60,6 +60,10 @@ html {
   .wrapper {
     padding: 0 3.2rem;
   }
+
+  .header-wrapper {
+    padding: 2rem 3.2rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -104,7 +108,7 @@ html {
   border-radius: 10rem;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .burger {
     right: 1.6rem;
   }
@@ -207,7 +211,7 @@ html {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .actions-wrapper {
     margin-right: 5.6rem;
   }
@@ -248,14 +252,6 @@ html {
 
 .menu-link {
   gap: 0.8rem;
-}
-
-.hero-content-wrapper {
-  max-width: 53rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 4rem;
 }
 
 .heading,
