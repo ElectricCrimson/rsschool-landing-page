@@ -5,6 +5,8 @@
   --color-secondary: #665f55;
   --color-accent: #b0907a;
   --color-border: #c1b6ad;
+  --color-dark-mode-primary: #292826;
+  --color-dark-mode-primary-80: color-mix(in srgb, var(--color-dark-mode-primary-dark) 80%, transparent);
 }
 
 html {
@@ -577,4 +579,12 @@ html {
   .br-footer {
     display: inline;
   }
+}
+
+.dark {
+  background-color: var(--color-dark-mode-primary);
+}
+
+.dark-mode-text {
+  color: var(--color-primary-light);
 }
