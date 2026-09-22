@@ -40,6 +40,21 @@ function switchColors() {
     if (!menuCards) return;
     menuCards.forEach(card => card.classList.toggle('dark-card'))
   }
+
+  body.classList.contains('dark') ? setMode('dark') : setMode('light');
+}
+
+function setMode(mode) {
+  localStorage.setItem('mode', mode);
+}
+
+function checkMode() {
+  const currentMode = localStorage.getItem('mode');
+  if (currentMode === 'dark') {
+    switchColors();
+  }
 }
 
 switchBtn.addEventListener('click', switchColors);
+
+checkMode();
