@@ -1,5 +1,6 @@
 const body = document.querySelector('.body');
 const headings = document.querySelectorAll('.heading');
+const logoPaths = document.querySelectorAll('.logo-path');
 const menuIcon = document.querySelector('.menu-icon');
 const texts = document.querySelectorAll('.text');
 const links = document.querySelectorAll('.link');
@@ -16,6 +17,7 @@ const pageType = body.id;
 function switchColors() {
   body.classList.toggle('dark');
   headings.forEach(heading => heading.classList.toggle('dark-mode-text'));
+  logoPaths.forEach(path => path.classList.toggle('dark-btn'));
   menuIcon.classList.toggle('dark-icon');
   texts.forEach(text => text.classList.toggle('dark-mode-text'));
   links.forEach(link => link.classList.toggle('dark-link'));

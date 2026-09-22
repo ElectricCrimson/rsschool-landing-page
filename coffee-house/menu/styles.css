@@ -633,3 +633,7 @@ html {
 .btn-tab.dark-tab:hover {
   border-color: transparent;
 }
+
+.logo-path.dark-btn {
+  fill: var(--color-primary-light);
+}

@@ -767,7 +767,8 @@ html {
   background-color: var(--color-primary-dark);
 }
 
-.btn-app.dark-btn .icon-app-path {
+.btn-app.dark-btn .icon-app-path,
+.logo-path.dark-btn {
   fill: var(--color-primary-light);
 }
 
