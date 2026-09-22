@@ -29,6 +29,10 @@ function switchColors() {
     const refreshBtn = body.querySelector('.wrapper-icon');
     if (!refreshBtn) return;
     refreshBtn.classList.toggle('dark-icon');
+
+    const menuCards = body.querySelectorAll('.catalog-card');
+    if (!menuCards) return;
+    menuCards.forEach(card => card.classList.toggle('dark-card'))
   }
 }
 

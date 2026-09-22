@@ -623,7 +623,8 @@ html {
   background-color: var(--color-primary-dark);
 }
 
-.btn-tab.dark-tab {
+.btn-tab.dark-tab,
+.catalog-card.dark-card {
   border-color: var(--color-secondary);
 }
 
