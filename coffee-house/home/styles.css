@@ -689,6 +689,10 @@ html {
   font-weight: 600;
 }
 
+.br-footer {
+  display: none;
+}
+
 @media screen and (max-width: 1180px) {
   .footer {
     gap: 6rem;
@@ -717,5 +721,9 @@ html {
 @media screen and (max-width: 400px) {
   .footer-contacts {
     padding: 6rem 1.6rem;
+  }
+
+  .br-footer {
+    display: inline;
   }
 }

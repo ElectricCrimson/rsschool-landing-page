@@ -536,6 +536,10 @@ html {
   font-weight: 600;
 }
 
+.br-footer {
+  display: none;
+}
+
 .hidden {
   display: none;
 }
@@ -568,5 +572,9 @@ html {
 @media screen and (max-width: 400px) {
   .footer-contacts {
     padding: 6rem 1.6rem;
+  }
+
+  .br-footer {
+    display: inline;
   }
 }
