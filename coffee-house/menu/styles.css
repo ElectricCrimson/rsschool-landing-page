@@ -613,7 +613,8 @@ html {
   border-color: var(--color-primary-light);
 }
 
-.wrapper-icon.dark-icon .icon-path {
+.wrapper-icon.dark-icon .icon-path,
+.menu-icon.dark-icon .icon-path {
   stroke: var(--color-primary-light);
 }
 

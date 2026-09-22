@@ -787,3 +787,11 @@ html {
 .btn-social.dark-btn:hover .icon-path {
   stroke: var(--color-primary-light);
 }
+
+.menu-icon.dark-icon .icon-path {
+  stroke: var(--color-primary-light);
+}
+
+.btn-hero.dark-btn .btn-hero-text::after {
+  filter: invert(100%) sepia(20%) brightness(100%);
+}
