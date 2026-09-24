@@ -440,7 +440,6 @@ html {
 
 @media screen and (max-width: 1090px) {
   .catalog-wrapper {
-    flex-direction: column;
     align-items: center;
   }
 
@@ -453,6 +452,14 @@ html {
 
   .wrapper-icon {
     display: flex;
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .catalog-wrapper {
+    flex-direction: column;
   }
 }
 
