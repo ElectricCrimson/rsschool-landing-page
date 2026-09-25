@@ -102,14 +102,36 @@
                 <path d="M0.5 6.5H13M7 12.5L13 6.5L7 0.5" class="arrow-path" stroke="#403f3d" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </button>
-            <div class="slider-item">
-              <div class="slider-img-wrapper">
-                <img src="../assets/img/coffee-slider-1.png" alt="Frappuccino" class="slider-img">
+            <div class="slider-items">
+              <div class="slider-item" id="slider-item-1">
+                <div class="slider-img-wrapper">
+                  <img src="../assets/img/coffee-slider-1.png" alt="Frappuccino" class="slider-img">
+                </div>
+                <div class="item-caption">
+                  <h3 class="heading heading-tertiary">S’mores Frappuccino</h3>
+                  <p class="text item-description">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+                  <p class="heading heading-tertiary">$5.50</p>
+                </div>
               </div>
-              <div class="item-caption">
-                <h3 class="heading heading-tertiary">S’mores Frappuccino</h3>
-                <p class="text item-description">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
-                <p class="heading heading-tertiary">$5.50</p>
+              <div class="slider-item" id="slider-item-2">
+                <div class="slider-img-wrapper">
+                  <img src="../assets/img/coffee-slider-2.png" alt="Caramel Macchiato" class="slider-img">
+                </div>
+                <div class="item-caption">
+                  <h3 class="heading heading-tertiary">Caramel Macchiato</h3>
+                  <p class="text item-description">Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</p>
+                  <p class="heading heading-tertiary">$5.00</p>
+                </div>
+              </div>
+              <div class="slider-item" id="slider-item-3">
+                <div class="slider-img-wrapper">
+                  <img src="../assets/img/coffee-slider-3.png" alt="Frappuccino" class="slider-img">
+                </div>
+                <div class="item-caption">
+                  <h3 class="heading heading-tertiary">Ice coffee</h3>
+                  <p class="text item-description">A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
+                  <p class="heading heading-tertiary">$4.50</p>
+                </div>
               </div>
             </div>
             <button class="btn btn-slider">
@@ -119,9 +141,9 @@
             </button>
           </div>
           <div class="pagination-wrapper">
-            <div class="pagination-item pagination-active"></div>
-            <div class="pagination-item"></div>
-            <div class="pagination-item"></div>
+            <div class="pagination-item pagination-active" id="pag-1"></div>
+            <div class="pagination-item" id="pag-2"></div>
+            <div class="pagination-item" id="pag-3"></div>
           </div>
         </div>
       </div>
