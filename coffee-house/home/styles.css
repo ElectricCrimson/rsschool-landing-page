@@ -101,6 +101,23 @@ html {
   border-radius: 10rem;
 }
 
+.burger.burger-cross {
+  flex-direction: row;
+  gap: 0rem;
+}
+
+.burger.burger-cross .burger-line {
+  transition: all 0.3s ease-in-out;
+}
+
+.burger.burger-cross .burger-line:first-child {
+  transform: translateX(0.75rem) rotate(45deg);
+}
+
+.burger.burger-cross .burger-line:last-child {
+  transform: translateX(-0.75rem) rotate(-45deg);
+}
+
 @media screen and (max-width: 500px) {
   .burger {
     right: 1.6rem;
