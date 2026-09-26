@@ -198,9 +198,48 @@ html {
 }
 
 @media screen and (max-width: 900px) {
+  .header-wrapper {
+    position: relative;
+  }
+
+  .nav {
+    position: fixed;
+    background-color: var(--color-primary-light);
+    width: 100vw;
+    height: 100vh;
+    top: 10rem;
+    z-index: 20;
+  }
+
+  .nav-list {
+    margin-top: 6rem;
+  }
+  
+  .menu-link:link {
+    position: fixed;
+    top: 44rem;
+    z-index: 21;
+  }
+  
   .nav,
   .menu-link:link {
-    display: none;
+    right: -100%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-list {
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .nav-active {
+    right: 0;
+  }
+  
+  .nav.nav-active + .actions-wrapper .menu-link {
+    right: 50%;
+    transform: translate(50%);
+    margin-bottom: 4rem;
   }
 
   .burger {

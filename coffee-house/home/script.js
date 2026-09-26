@@ -1,3 +1,5 @@
+import { toggleBurgerMenu } from './scripts/burger.js';
+
 const body = document.querySelector('.body');
 const headings = document.querySelectorAll('.heading');
 const logoPaths = document.querySelectorAll('.logo-path');
@@ -58,3 +60,5 @@ function checkMode() {
 switchBtn.addEventListener('click', switchColors);
 
 checkMode();
+
+toggleBurgerMenu();
