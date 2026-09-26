@@ -8,12 +8,9 @@ const burgerBtn = document.querySelector('.burger');
 const texts = document.querySelectorAll('.text');
 const links = document.querySelectorAll('.link');
 const btns = document.querySelectorAll('.btn');
-const refreshBtn = document.querySelector('wrapper-icon');
 const footer = document.querySelector('.footer-contacts');
 
 const switchBtn = document.querySelector('.btn-switch');
-const switchBtnLight = document.querySelector('.switch-light');
-const switchBtnDark = document.querySelector('.switch-dark');
 
 const pageType = body.id;
 
