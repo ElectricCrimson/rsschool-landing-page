@@ -1,6 +1,6 @@
 const body = document.querySelector('.body');
 const burgerBtn = document.querySelector('.burger');
-const nav = document.querySelector('.nav');
+export const nav = document.querySelector('.nav');
 const btnMenu = document.querySelector('.menu-link')
 
 

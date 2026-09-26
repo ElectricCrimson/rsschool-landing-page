@@ -1,4 +1,4 @@
-import { toggleBurgerMenu } from './scripts/burger.js';
+import { toggleBurgerMenu, nav } from './scripts/burger.js';
 
 const body = document.querySelector('.body');
 const headings = document.querySelectorAll('.heading');
@@ -17,6 +17,7 @@ const pageId = body.id;
 function switchColors() {
   body.classList.toggle('dark');
   headings.forEach(heading => heading.classList.toggle('dark-mode-text'));
+  nav.classList.toggle('dark');
   logoPaths.forEach(path => path.classList.toggle('dark-btn'));
   menuIcon.classList.toggle('dark-icon');
   burgerBtn.classList.toggle('dark-burger');
