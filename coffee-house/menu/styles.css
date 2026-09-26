@@ -215,6 +215,16 @@ html {
 }
 
 @media screen and (max-width: 900px) {
+  .nav-list {
+    gap: 2rem;
+  }
+
+  .actions-wrapper {
+    gap: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .header-wrapper {
     position: relative;
   }
@@ -229,6 +239,7 @@ html {
   }
 
   .nav-list {
+    gap: 4rem;
     margin-top: 6rem;
   }
   
