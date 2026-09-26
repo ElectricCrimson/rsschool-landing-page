@@ -12,7 +12,7 @@ const footer = document.querySelector('.footer-contacts');
 
 const switchBtn = document.querySelector('.btn-switch');
 
-const pageType = body.id;
+const pageId = body.id;
 
 function switchColors() {
   body.classList.toggle('dark');
@@ -25,7 +25,7 @@ function switchColors() {
   btns.forEach(btn => btn.classList.toggle('dark-btn'));
   footer.classList.toggle('dark-footer');
 
-  if (pageType === 'menu-page') {
+  if (pageId === 'menu-page') {
     const tabs = body.querySelectorAll('.btn-tab');
     if (!tabs) return;
     tabs[0].classList.toggle('dark-tab-active');
