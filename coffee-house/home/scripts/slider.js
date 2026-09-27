@@ -50,6 +50,7 @@ export function switchSlide() {
       const slideNumber = Number(e.target.id.slice(-1));
       changeSlide(slideNumber - 1);
       setActiveLine(slideNumber);
+      curSlide = slideNumber - 1;
     }
   })
 }
