@@ -526,8 +526,13 @@ html {
   cursor: pointer;
 }
 
-.pagination-active {
+.pagination-active,
+.body.dark .pagination-item {
   background-color: var(--color-secondary);
+}
+
+.body.dark .pagination-active {
+  background-color: var(--color-border);
 }
 
 @media screen and (max-width: 735px) {
