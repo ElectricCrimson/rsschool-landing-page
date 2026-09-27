@@ -1,4 +1,5 @@
 import { toggleBurgerMenu, nav } from './scripts/burger.js';
+import { switchSlide } from './scripts/slider.js';
 
 const body = document.querySelector('.body');
 const headings = document.querySelectorAll('.heading');
@@ -60,3 +61,5 @@ switchBtn.addEventListener('click', switchColors);
 checkMode();
 
 toggleBurgerMenu();
+
+switchSlide();
