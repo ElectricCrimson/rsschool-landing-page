@@ -1,6 +1,6 @@
+import { body, pageId } from '../script.js';
 import { nav } from './burger.js';
 
-const body = document.querySelector('.body');
 const headings = document.querySelectorAll('.heading');
 const logoPaths = document.querySelectorAll('.logo-path');
 const menuIcon = document.querySelector('.menu-icon');
@@ -11,8 +11,6 @@ const btns = document.querySelectorAll('.btn');
 const footer = document.querySelector('.footer-contacts');
 
 const switchBtn = document.querySelector('.btn-switch');
-
-const pageId = body.id;
 
 function switchColors() {
   body.classList.toggle('dark');
