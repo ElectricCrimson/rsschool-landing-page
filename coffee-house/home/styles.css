@@ -456,7 +456,7 @@ html {
 }
 
 .btn-slider,
-.btn-slider .arrow-path  {
+.btn-slider .arrow-path {
   transition: all 0.3s ease-in-out;
 }
 
@@ -464,13 +464,11 @@ html {
   transform: scaleX(-1);
 }
 
-.btn-slider:hover,
-.btn-slider:active {
+.btn-slider:hover {
   background-color: var(--color-secondary);
 }
 
-.btn-slider:hover .arrow-path,
-.btn-slider:active .arrow-path {
+.btn-slider:hover .arrow-path {
   stroke: var(--color-primary-light);
 }
 
