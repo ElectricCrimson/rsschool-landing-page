@@ -1,0 +1,60 @@
+import { menuData } from './menu-data.js';
+
+const tabWrapper = document.querySelector('.tabs-wrapper');
+const tabs = document.querySelectorAll('.btn-tab');
+const catalog = document.querySelector('.catalog-wrapper');
+
+let curTab = 1;
+
+function filterData(category) {
+  return menuData.filter(data => data.category === `${category}`);
+}
+
+function pasteCards(id) {
+  if (!catalog) return;
+  
+  catalog.innerHTML = '';
+  let cards;
+
+  if (id === 1) {
+    cards = filterData('coffee');
+  } else if (id === 2) {
+    cards = filterData('tea');
+  } else {
+    cards = filterData('dessert');
+  }
+
+  cards.forEach((card, i) => {
+    catalog.insertAdjacentHTML('beforeend', `
+      <div class="catalog-card">
+        <div class="card-img-wrapper">
+          <img src="../assets/img/${card.category}-${i + 1}.jpg" alt="${card.name}" class="card-img">
+        </div>
+        <div class="card-info">
+          <div class="card-description">
+            <h3 class="heading heading-tertiary">${card.name}</h3>
+            <p class="text">${card.description}</p>
+          </div>
+            <p class="heading heading-tertiary">$${card.price}</p>
+        </div>
+      </div>`);
+  });
+}
+
+function setActiveTab(tabId) {
+  tabs.forEach(tab => tab.classList.remove('tab-active'));
+  document.querySelector(`#tab-${tabId}`).classList.add('tab-active');
+};
+
+export function switchActiveTab() {
+  tabWrapper.addEventListener('click', function(e) {
+    if (e.target.closest('.btn-tab')) {
+      const tabNumber = Number(e.target.id.slice(-1));
+      setActiveTab(tabNumber);
+      curTab = tabNumber;
+      pasteCards(curTab);
+    }
+  })
+}
+
+pasteCards(curTab);
