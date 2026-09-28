@@ -48,12 +48,13 @@ function setActiveTab(tabId) {
 
 export function switchActiveTab() {
   tabWrapper.addEventListener('click', function(e) {
-    if (e.target.closest('.btn-tab')) {
-      const tabNumber = Number(e.target.id.slice(-1));
-      setActiveTab(tabNumber);
-      curTab = tabNumber;
-      pasteCards(curTab);
-    }
+    const tabBtn = e.target.closest('.btn-tab');
+    if (!tabBtn) return;
+    
+    const tabNumber = Number(tabBtn.id.slice(-1));
+    setActiveTab(tabNumber);
+    curTab = tabNumber;
+    pasteCards(curTab);
   })
 }
 
