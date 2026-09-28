@@ -2,6 +2,7 @@ import { switchMode } from './scripts/color-mode.js';
 import { toggleBurgerMenu } from './scripts/burger.js';
 import { switchSlide } from './scripts/slider.js';
 import { switchActiveTab } from './scripts/menu.js';
+import { toggleModalWindow } from './scripts/modal-window.js';
 
 export const body = document.querySelector('.body');
 export const pageId = body.id;
@@ -15,4 +16,5 @@ if (pageId === 'home-page') {
 
 if (pageId === 'menu-page') {
   switchActiveTab();
+  toggleModalWindow();
 }

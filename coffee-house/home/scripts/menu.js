@@ -2,7 +2,7 @@ import { menuData } from './menu-data.js';
 
 const tabWrapper = document.querySelector('.tabs-wrapper');
 const tabs = document.querySelectorAll('.btn-tab');
-const catalog = document.querySelector('.catalog-wrapper');
+export const catalog = document.querySelector('.catalog-wrapper');
 
 let curTab = 1;
 
@@ -26,7 +26,7 @@ function pasteCards(id) {
 
   cards.forEach((card, i) => {
     catalog.insertAdjacentHTML('beforeend', `
-      <div class="catalog-card">
+      <div class="catalog-card" id="${card.category}-${i + 1}">
         <div class="card-img-wrapper">
           <img src="../assets/img/${card.category}-${i + 1}.jpg" alt="${card.name}" class="card-img">
         </div>
