@@ -786,12 +786,15 @@ html {
 }
 
 .modal-img-wrapper {
-  max-width: 34rem;
+  width: 34rem;
   height: 34rem;
 }
 
 .modal-img {
   border-radius: 4rem;
+  width: 100%;
+  height: 100%;
+  /* display: block; */
 }
 
 .modal-description {
@@ -885,6 +888,47 @@ html {
   align-items: center;
   justify-content: center;
   border-color: var(--color-secondary);
+}
+
+@media screen and (max-width: 900px) {
+  .modal {
+    width: 68.8rem;
+    height: auto;
+  }
+
+  .modal-img-wrapper {
+    width: 31rem;
+    height: 31rem;
+  }
+
+  .modal-description {
+    max-width: 32.6rem;
+  }
+
+  .sizes-wrapper,
+  .additives-wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .modal {
+    width: 50rem;
+  }
+
+  .modal-img-wrapper {
+    display: none;
+  }
+
+  .modal-content {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .modal {
+    width: 34.2rem;
+  }
 }
 
 .body.dark .modal .text,
