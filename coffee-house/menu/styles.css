@@ -665,7 +665,9 @@ html {
   background-color: var(--color-dark-mode-primary);
 }
 
-.dark-mode-text {
+.dark-mode-text,
+.body.dark .card-info .heading-tertiary,
+.body.dark .card-info .text{
   color: var(--color-primary-light);
 }
 
@@ -700,18 +702,18 @@ html {
 }
 
 .footer-contacts.dark-footer,
-.btn-tab.dark-tab-active,
-.btn-tab.dark-tab:hover {
+.body.dark .btn-tab.tab-active,
+.body.dark .btn-tab:hover {
   background-color: var(--color-primary-dark);
 }
 
-.btn-tab.dark-tab,
-.catalog-card.dark-card {
+.body.dark .btn-tab,
+.body.dark .catalog-card {
   border-color: var(--color-secondary);
 }
 
-.btn-tab.dark-tab-active,
-.btn-tab.dark-tab:hover {
+.body.dark .btn-tab.tab-active,
+.body.dark .btn-tab:hover {
   border-color: transparent;
 }
 
