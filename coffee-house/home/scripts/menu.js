@@ -1,4 +1,5 @@
 import { menuData } from './menu-data.js';
+import { hideExtraCards } from './refresh-btn.js';
 
 const tabWrapper = document.querySelector('.tabs-wrapper');
 const tabs = document.querySelectorAll('.btn-tab');
@@ -39,6 +40,8 @@ function pasteCards(id) {
         </div>
       </div>`);
   });
+
+  return cards;
 }
 
 function setActiveTab(tabId) {
@@ -55,6 +58,7 @@ export function switchActiveTab() {
     setActiveTab(tabNumber);
     curTab = tabNumber;
     pasteCards(curTab);
+    hideExtraCards();
   })
 }
 

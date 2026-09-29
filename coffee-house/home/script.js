@@ -3,6 +3,7 @@ import { toggleBurgerMenu } from './scripts/burger.js';
 import { switchSlide } from './scripts/slider.js';
 import { switchActiveTab } from './scripts/menu.js';
 import { toggleModalWindow } from './scripts/modal-window.js';
+import { hideExtraCards } from './scripts/refresh-btn.js';
 
 export const body = document.querySelector('.body');
 export const pageId = body.id;
@@ -17,4 +18,5 @@ if (pageId === 'home-page') {
 if (pageId === 'menu-page') {
   switchActiveTab();
   toggleModalWindow();
+  hideExtraCards();
 }
