@@ -1,9 +1,10 @@
 import { body } from '../script.js';
 import { catalog } from './menu.js';
 import { menuData } from './menu-data.js';
+import { showPrice } from './card-price.js';
 
 const modalBackground = document.querySelector('.modal-background');
-const modal = document.querySelector('.modal');
+export const modal = document.querySelector('.modal');
 
 function filterCard(name) {
   return menuData.filter(card => card.name === `${name}`);
@@ -39,7 +40,7 @@ function pasteModalContent(card, id) {
         </div>
         <div class="price-wrapper">
           <p class="heading heading-tertiary">Total:</p>
-          <p class="heading heading-tertiary">$${card.price}</p>
+          <p class="heading heading-tertiary price">$${card.price}</p>
         </div>
         <div class="info-wrapper">
           <p class="text text-info">The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
@@ -71,6 +72,7 @@ export function toggleModalWindow() {
 
     openModalWindow();
     pasteModalContent(curCard, card.id);
+    showPrice(curCard);
     
     const closeBtn = document.querySelector('.btn-close');
     if (!closeBtn) return;
